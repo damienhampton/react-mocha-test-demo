@@ -1,0 +1,38 @@
+{
+  "name": "react-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --mode development --open",
+    "build": "webpack --mode production",
+    "test:mocha": "node_modules/.bin/mochapack --webpack-config webpack-test.config.js --require ./test/dom.js test/*.spec.js",
+    "test:jest": "jest test/basic.test.js"
+  },
+  "keywords": [],
+  "author": "Damien Hampton <damien@26brains.com> (https://twitter.com/damien_hampton)",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@testing-library/react": "^10.0.2",
+    "babel-loader": "^8.1.0",
+    "chai": "^4.2.0",
+    "css-loader": "^3.5.2",
+    "html-webpack-plugin": "^4.2.0",
+    "jsdom": "^16.2.2",
+    "mocha": "^7.1.1",
+    "mochapack": "^1.1.15",
+    "null-loader": "^4.0.0",
+    "raf": "^3.4.1",
+    "style-loader": "^1.1.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
